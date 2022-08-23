@@ -1,0 +1,9 @@
+Tema: Motos
+
+inputs:
+    Nome da Moto (texto)
+    Modelo (Select)
+    Marca (texto)
+    Cilindradas (texto)
+    Imagem URL (texto)
+    Submit
