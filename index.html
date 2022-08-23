@@ -20,14 +20,33 @@
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>brand
-            <form action="get">
-                <input id="titulo" type="text" value="Título">
-                <input id="desc" type="text" value="Descrição">
-                <input id="img-perfil" type="text" value="URL da Imagem de Perfil">
-                <button id="send" type="submit">Enviar</button>
-            </form>
+                  <span class="close">&times;</span>
+                  <h2 id="add-moto">Adicione sua moto favorita</h2>
+                <div class="modal-body">
+                    <form class="dados-moto" action="get">
+                        <label for="titulo">Moto:
+                        <input id="titulo" type="text" placeholder="Escreva o nome da moto">
+                        </label>
+                        <label for="desc">Descrição:
+                        <textarea id="desc" placeholder="Descreva as característica da moto"></textarea>
+                        </label>
+                        <label for="img-perfil">Imagem da moto:
+                        <input id="img-perfil" type="url" placeholder="URL da Imagem da moto">
+                        </label>
+                        <label for="modelo">Modelo:
+                            <select name="modelo" id="modelo">
+                                <option value="Custom">Custom</option>
+                                <option value="Racer">Racer</option>
+                            </select>
+                        </label>
+                        <label for="cilindradas">Cilindradas:
+                            <input id="cilindradas" type="text" placeholder="CC da moto">
+                        </label>
+                        <button id="send" type="submit">Enviar</button>
+                    </form>
+                </div>
+              </div>
+            
         </div>
 
         <section class="cards">
