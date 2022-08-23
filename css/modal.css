@@ -17,16 +17,16 @@
     font-weight: bold;
   }
   
-  .close:hover, .close:focus {
+  .close:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
   }
+  
   .modal-content {
     background-color: rgb(192, 191, 191);
     border-radius: 10px;
     position: relative;
     margin: auto;
-    padding: 0;
     width: 80%;
     height: 550px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -44,10 +44,7 @@
   text-align: center;
   padding-top: 30px;
   font-size: 1.3rem;
-}
-
-.dados-moto{
-  flex-wrap: wrap;
+  font-weight: bolder;
 }
 
 #titulo, #desc, #img-perfil{
@@ -90,10 +87,9 @@
   color: white;
 }
 
-/* Add Animation */
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
-  to {top: 50px; opacity: 1}
+  to {top: 0px; opacity: 1}
 }
 
 @media(min-width: 481px){
