@@ -1,5 +1,37 @@
+header {
+
+}
+
+h1{
+
+}
+
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cards{
+
+}
+
+.card{
+
+}
+
+.motorcycle-model{
+
+}
+
+.motorcycle-name{
+
+}
+
+.motorcycle-brand{
+
+}
+
+.motorcycle-cc{
+    
 }

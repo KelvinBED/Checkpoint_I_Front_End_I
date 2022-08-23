@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,19 @@
     <link rel="stylesheet" href="css/modal.css">
     <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <h1> Checkpoint MotoCards</h1>
+    </header>
     <main class="main">
 
-            <button id="btn-add" onclick="escurece()">Adicionar Personagem</button>
+        <button id="btn-add" onclick="escurece()">Adicionar Personagem</button>
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-              </div>
+            </div>brand
             <form action="get">
                 <input id="titulo" type="text" value="Título">
                 <input id="desc" type="text" value="Descrição">
@@ -25,8 +30,20 @@
             </form>
         </div>
 
+        <section class="cards">
+            <article class="card">
+                <p class="motorcycle-model">Modelo da moto</p>
+                <img width="30%" height="auto" src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg" alt="Foto moto">
+                <h2 class="motorcycle-name">Nome da moto</h2>
+                <p class="motorcycle-brand">Marca da moto</p>
+                <p class="motorcycle-cc">600 cc</p>
+            </article>
+            
+        </section>
     </main>
 
     <script src="JS/script.js"></script>
+    <footer></footer>
 </body>
+
 </html>
