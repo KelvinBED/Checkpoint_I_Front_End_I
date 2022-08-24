@@ -16,22 +16,22 @@
     </header>
     <main class="main">
 
-        <button id="btn-add" onclick="escurece()">Adicionar moto</button>
+        <button id="btn-add">Adicionar moto</button>
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
                   <span class="close">&times;</span>
                   <h2 id="add-moto">Adicione sua moto favorita</h2>
                 <div class="modal-body">
-                    <form class="dados-moto" action="get">
+                    <form class="dados-moto">
                         <label for="titulo">Moto:
-                        <input id="titulo" type="text" placeholder="Escreva o nome da moto">
+                        <input id="titulo" type="text" name="titulo-moto" placeholder="Escreva o nome da moto">
                         </label>
                         <label for="desc">Descrição:
-                        <textarea id="desc" placeholder="Descreva as característica da moto"></textarea>
+                        <textarea id="desc" name="desc" placeholder="Descreva as característica da moto"></textarea>
                         </label>
                         <label for="img-perfil">Imagem da moto:
-                        <input id="img-perfil" type="url" placeholder="URL da Imagem da moto">
+                        <input id="img-perfil" type="text" name="img-perfil" placeholder="URL da Imagem da moto">
                         </label>
                         <label for="modelo">Modelo:
                             <select name="modelo" id="modelo">
@@ -40,9 +40,9 @@
                             </select>
                         </label>
                         <label for="cilindradas">Cilindradas:
-                            <input id="cilindradas" type="text" placeholder="CC da moto">
+                            <input id="cilindradas" type="text" name="cilindradas" placeholder="CC da moto">
                         </label>
-                        <button id="send" type="submit">Enviar</button>
+                        <button onclick='fechar()' id="send" type="submit">Enviar</button>
                     </form>
                 </div>
               </div>
@@ -60,8 +60,8 @@
             
         </section>
     </main>
-
-    <script src="JS/script.js"></script>
+    <script src="JS/script-forms.js"></script>
+    <script src="JS/script-modal.js"></script>
     <footer></footer>
 </body>
 
