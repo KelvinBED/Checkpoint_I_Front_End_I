@@ -1,62 +1,115 @@
+/* .color1 {color: #114441;}
+.color2 {color: #0f5d48;}
+.color3 {color: #17804f;}
+.color4 {color: #5cae54;}
+.color5 {color: #bbeb5f;} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: #41494D;
+    --color-2: #CCD8DD;
+    --color-3: #852B29;
+    --color-4: #008E36;
+    --color-5: #00BF1E;
+    --background-color: #f3f3f3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 160px;
+    /* altura do seu footer */
+    background-color: var(--background-color);
+}
+
 header {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    background-color: #008e36;
+    background-image: linear-gradient(315deg, #008e36 0%, #852b29 74%);
 
 }
 
-h1{
-
+h1 {
+    color: var(--color-2)
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
+    height: 100%;
 }
 
-#btn-add{
+#btn-add {
     border: none;
     border-radius: 10px;
     width: 18%;
     height: 35px;
     font-size: 12px;
     font-weight: bolder;
+    background-color: var(--color-2);
+    transition: .3s
 }
 
-#btn-add:hover{
-    background-color: rgb(79, 79, 241);
-    color: white;
+#btn-add:hover {
+    background-color: var(--color-3);
+    color: var(--color-2);
     cursor: pointer;
 }
 
-.cards{
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2% auto;
 
 }
 
-.card{
+.cards section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-4);
+    width: 30%;
 
 }
 
-.motorcycle-model{
+.motorcycle-model {}
 
-}
+.motorcycle-name {}
 
-.motorcycle-name{
+.motorcycle-brand {}
 
-}
+.motorcycle-cc {}
 
-.motorcycle-brand{
-
-}
-
-.motorcycle-cc{
-    
-}
-
-@media(min-width: 481px){
-    #btn-add{
+@media(min-width: 481px) {
+    #btn-add {
         font-size: 15px;
     }
-  }
-  
-  @media(min-width: 769px){
-  
-  }
+}
+
+@media(min-width: 769px) {}

@@ -7,31 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
-    <title>Document</title>
+    <title>MotoCards</title>
 </head>
 
 <body>
     <header>
         <h1> Checkpoint MotoCards</h1>
+        <button id="btn-add">Adicionar moto</button>
     </header>
     <main class="main">
 
-        <button id="btn-add">Adicionar moto</button>
+
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h2 id="add-moto">Adicione sua moto favorita</h2>
+                <span class="close">&times;</span>
+                <h2 id="add-moto">Adicione sua moto favorita</h2>
                 <div class="modal-body">
                     <form class="dados-moto">
                         <label for="titulo">Moto:
-                        <input id="titulo" type="text" name="titulo-moto" placeholder="Escreva o nome da moto">
+                            <input id="titulo" type="text" name="titulo-moto" placeholder="Escreva o nome da moto">
                         </label>
                         <label for="desc">Descrição:
-                        <textarea id="desc" name="desc" placeholder="Descreva as característica da moto"></textarea>
+                            <textarea id="desc" name="desc" placeholder="Descreva as característica da moto"></textarea>
                         </label>
                         <label for="img-perfil">Imagem da moto:
-                        <input id="img-perfil" type="text" name="img-perfil" placeholder="URL da Imagem da moto">
+                            <input id="img-perfil" type="text" name="img-perfil" placeholder="URL da Imagem da moto">
                         </label>
                         <label for="modelo">Modelo:
                             <select name="modelo" id="modelo">
@@ -45,19 +46,54 @@
                         <button onclick='fechar()' id="send" type="submit">Enviar</button>
                     </form>
                 </div>
-              </div>
-            
+            </div>
+
         </div>
 
         <section class="cards">
-            <article class="card">
-                <p class="motorcycle-model">Modelo da moto</p>
-                <img width="30%" height="auto" src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg" alt="Foto moto">
-                <h2 class="motorcycle-name">Nome da moto</h2>
-                <p class="motorcycle-brand">Marca da moto</p>
-                <p class="motorcycle-cc">600 cc</p>
-            </article>
-            
+            <h2>Motos escolhidas</h2>
+
+            <section class="cards-list">
+                <article class="card">
+                    <p class="motorcycle-model">Modelo da moto</p>
+                    <img width="30%" height="auto"
+                        src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
+                        alt="Foto moto">
+                    <h3 class="motorcycle-name">Nome da moto</h3>
+                    <p class="motorcycle-brand">Marca da moto</p>
+                    <p class="motorcycle-cc">600 cc</p>
+                </article>
+
+                <article class="card">
+                    <p class="motorcycle-model">Modelo da moto</p>
+                    <img width="30%" height="auto"
+                        src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
+                        alt="Foto moto">
+                    <h3 class="motorcycle-name">Nome da moto</h3>
+                    <p class="motorcycle-brand">Marca da moto</p>
+                    <p class="motorcycle-cc">600 cc</p>
+                </article>
+
+                <article class="card">
+                    <p class="motorcycle-model">Modelo da moto</p>
+                    <img width="30%" height="auto"
+                        src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
+                        alt="Foto moto">
+                    <h3 class="motorcycle-name">Nome da moto</h3>
+                    <p class="motorcycle-brand">Marca da moto</p>
+                    <p class="motorcycle-cc">600 cc</p>
+                </article>
+
+                <article class="card">
+                    <p class="motorcycle-model">Modelo da moto</p>
+                    <img width="30%" height="auto"
+                        src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
+                        alt="Foto moto">
+                    <h3 class="motorcycle-name">Nome da moto</h3>
+                    <p class="motorcycle-brand">Marca da moto</p>
+                    <p class="motorcycle-cc">600 cc</p>
+                </article>
+            </section>
         </section>
     </main>
     <script src="JS/script-forms.js"></script>
