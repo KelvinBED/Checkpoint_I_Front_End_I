@@ -1,9 +1,3 @@
-/* .color1 {color: #114441;}
-.color2 {color: #0f5d48;}
-.color3 {color: #17804f;}
-.color4 {color: #5cae54;}
-.color5 {color: #bbeb5f;} */
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
 
 * {
@@ -22,43 +16,6 @@
     font-family: 'Source Code Pro', monospace;
 }
 
-
-h1 {
-    font-size: 2.5em;
-    color: var(--color-2)
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 1.7em;
-    padding: 2%;
-    color: var(--color-3);
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 1.1em
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-    background-color: var(--color-2);
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    margin: 0 0 160px;
-    display: flex;
-    flex-direction: column;
-    /* altura do seu footer */
-    background-color: var(--color-2);
-}
-
 header {
     height: 100px;
     width: 100%;
@@ -66,59 +23,34 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px 0 30px;
-    background-color: #008e36;
     background-image: linear-gradient(315deg, #008e36 0%, #852b29 74%);
-
-
 }
 
+h1 {
+    font-size: 2.5em;
+    color: var(--color-2)
+}
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--color-2);
-    height: 100%;
     width: 100%;
-    flex-grow: 1;
 }
 
-#btn-add {
-    border: none;
-    border-radius: 10px;
-    width: 18%;
-    height: 35px;
-    font-size: 12px;
-    font-weight: bolder;
-    background-color: var(--color-2);
-    transition: .3s
-}
-
-#btn-add:hover {
-    background-color: var(--color-3);
-    color: var(--color-2);
-    cursor: pointer;
+#h2-principal {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .cards {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 2% auto;
-
-}
-
-.cards-list {
-    margin: 2% auto;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
     align-items: center;
-}
-
+    gap: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2%;
+    }
 
 .card {
     background-color: var(--color-4);
@@ -126,21 +58,26 @@ main {
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 480px;
+    height: auto;
     max-width: 400px;
     border-radius: 10px;
-
 }
 
-.card:hover, .card-add:hover{
-    transition: all 0.5s;
-    transform: scale(1.05);
+.motorcycle-model {
+    font-size: 1.7em;
+    padding: 2%;
+    color: var(--color-3);
+    font-weight: bold;
 }
 
 .card img {
     width: 90%;
     height: auto;
     border-radius: 3px;
+}
+
+.motocycle-name {
+    font-size: 1.1em
 }
 
 .card-datails {
@@ -153,27 +90,25 @@ main {
     justify-content: space-around;
 }
 
-
 .card-datails h4, p {
     border-bottom: 1px solid var(--color-3);
     color: #fff;
     font: 1.3em sans-serif;
 }
 
-
+.descricao{
+    background-color: rgba(243, 243, 243, 0.1);  
+}
 
 .card-add {
     background-color: var(--color-4);
     opacity: .5;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 200px;
-    max-width: 400px;
     border-radius: 10px;
-
 }
 
 .card-add button {
@@ -186,44 +121,42 @@ main {
 }
 
 .card-add button:hover {
-    transition: all 0.5s;
     width: 85%;
     height: 85%;
     background-color: rgba(255, 255, 255, .3);
     border: none;
     cursor: pointer;
-
 }
 
-
 .card-add button span {
-    font-size: 5em;
+    font-size: 2.7em;
     color: #fff;
 }
 
+.card:hover, .card-add:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
 
 footer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;    
     text-align: center;
-    width: 100%;
-    background-color: #008e36;
     background-image: linear-gradient(315deg, #008e36 0%, #852b29 74%);
     font-weight: bold;
     font-size: 1.5em;
     color: #fff;
 }
 
-
 footer div{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 400px;
+    height: 250px;
     justify-content: space-around;
-    box-sizing: border-box;
 }
 
 footer section {
@@ -233,7 +166,6 @@ footer section {
     height: auto;
     align-items: center;
     justify-content: center;
-
 }
 
 footer section:hover {
@@ -244,7 +176,6 @@ footer section:hover {
 footer div section a img {
     width: 150px;
     height: auto;
-
 }
 
 footer section a img {
@@ -252,10 +183,10 @@ footer section a img {
     height: auto;
 
 }
-@media (max-width: 460px)
+@media (max-width: 460px){
 
 /*mobile*/
-    {
+    
     #btn-add {
         font-size: 15px;
         width: 80%
@@ -276,44 +207,32 @@ footer section a img {
         width: 80%;
         height: 200px
     }
-
-    footer {
-        flex-direction: column;
-        height: 500px;
-        align-items: center;
-        justify-content: center;
-
-        margin-top: 10%;
-    }
-
+    
     footer div{
         width: 100%;
+        padding-top: 5%;
         flex-direction: column;
         align-items: center;
     }
     footer section {
-        width: 80%
+        width: 80%;
+        padding-top: 10%;
     }
-
 }
 
-@media (min-width: 461px) and (max-width:768px)
+@media (min-width: 461px) and (max-width:768px){
 
 /*tablet*/
-    {
-
+    
     .card {
         width: 80%;
     }
 
     footer {
         width: 100%;
-        flex-direction: column;
         height: 500px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10%;
     }
+
     footer div{
         flex-direction: column;
         align-items: center;

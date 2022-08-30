@@ -13,11 +13,8 @@
 <body>
     <header>
         <h1> CHECKPOINT MOTOCARDS</h1>
-        <button id="btn-add">Adicionar moto</button>
     </header>
     <main>
-
-
 
         <div id="my-modal" class="modal">
             <div class="modal-content">
@@ -36,157 +33,40 @@
                         </label>
                         <label for="modelo">Modelo:
                             <select name="modelo" id="modelo">
+                                <option value=></option>
                                 <option value="Custom">Custom</option>
                                 <option value="Racer">Racer</option>
+                                <option value="Cruiser">Cruiser</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Off-Road">Off-Road</option>
+                                <option value="Sport">Sport</option>
+                                <option value="Naked">Naked</option>
                             </select>
                         </label>
-                        <label for="cilindradas">Cilindradas:
-                            <input id="cilindradas" type="text" name="cilindradas" placeholder="CC da moto">
+                        <label for="marca">Marca:
+                            <input id="marca" type="text" name="marca" placeholder="Marca da moto">
                         </label>
-                        <button onclick='fechar()' id="send" type="submit">Enviar</button>
+                        <button id="send" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
 
         </div>
-
-        <section class="cards">
-            <h2>MOTOS ESCOLHIDAS</h2>
-
-            <div class="cards-list">
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400 Ninja 400 Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki Kawasaki Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
+        
+        <h2 id="h2-principal">MOTOS ADICIONADAS</h2>
+        
+            <section>
+                <div class="cards" id="cards">
+                    
+                    <div class="card-add">
+                        <button id="btn-add">
+                            <span>+ Adicionar Moto</span>
+                        </button>
                     </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3 class="motorcycle-model">Sport</h3>
-                    <img src="https://kawasaki.m3parts.com.br/arquivos/1638451471_22ex400g_242gy1drf3cg_a.jpg"
-                        alt="Foto moto">
-                    <div class="card-datails">
-
-                        <h4 class="motorcycle-name">Ninja 400</h4>
-                        <p class="motorcycle-brand">Kawasaki</p>
-                        <p class="motorcycle-cc">400 cc</p>
-                    </div>
-                </article>
-
-
-                <article class="card-add">
-                    <button>
-                        <span>+</span>
-                    </button>
-                </article>
-
-            </div>
-        </section>
+                </div>
+              
+            </section>
     </main>
-    <script src="JS/script-forms.js"></script>
-    <script src="JS/script-modal.js"></script>
     <footer>
         <div>
             <section>
@@ -196,7 +76,7 @@
 
             <section>
                 <span>Kelvin Maciel</span>
-                <a target="_blank" href=""><img src="./img/gitLogo.png" /></a>
+                <a target="_blank" href="https://github.com/KelvinBED"><img src="./img/gitLogo.png" /></a>
             </section>
         </div>
         <section>
@@ -207,6 +87,8 @@
 
 
     </footer>
+    <script src="JS/script-forms.js"></script>
+    <script src="JS/script-modal.js"></script>
 </body>
 
 </html>
