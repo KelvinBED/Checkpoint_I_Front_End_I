@@ -21,6 +21,7 @@
                 <span class="close">&times;</span>
                 <h2 id="add-moto">Adicione sua moto favorita</h2>
                 <div class="modal-body">
+                    <button class="sortear" onclick="sortearDados()"><img src="./img/dado.png"  alt="Sortear"></button>
                     <form class="dados-moto">
                         <label for="titulo">Moto:
                             <input id="titulo" type="text" name="titulo-moto" placeholder="Escreva o nome da moto">
@@ -32,21 +33,23 @@
                             <input id="img-perfil" type="text" name="img-perfil" placeholder="URL da Imagem da moto">
                         </label>
                         <label for="modelo">Modelo:
-                            <select name="modelo" id="modelo">
-                                <option value=></option>
-                                <option value="Custom">Custom</option>
-                                <option value="Racer">Racer</option>
-                                <option value="Cruiser">Cruiser</option>
+                            <select name="modelo" id="modelo" placeholder="selecione">
                                 <option value="Adventure">Adventure</option>
+                                <option value="Cruiser">Cruiser</option>
+                                <option value="Custom">Custom</option>
                                 <option value="Off-Road">Off-Road</option>
-                                <option value="Sport">Sport</option>
                                 <option value="Naked">Naked</option>
+                                <option value="Racer">Racer</option>                              
+                                <option value="Sport">Sport</option>
+                                
                             </select>
                         </label>
                         <label for="marca">Marca:
                             <input id="marca" type="text" name="marca" placeholder="Marca da moto">
                         </label>
                         <button id="send" type="submit">Enviar</button>
+     
+                        
                     </form>
                 </div>
             </div>
@@ -60,7 +63,8 @@
                     
                     <div class="card-add">
                         <button id="btn-add">
-                            <span>+ Adicionar Moto</span>
+                            <span>+</span>
+                            <span id="btn-add-txt">Adicionar Moto</span>
                         </button>
                     </div>
                 </div>
@@ -86,9 +90,12 @@
         </section>
 
 
-    </footer>
-    <script src="JS/script-forms.js"></script>
+    </footer> 
+
+
+    <script src="JS/script-forms.js"></script>  
     <script src="JS/script-modal.js"></script>
+  
 </body>
 
 </html>

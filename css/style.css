@@ -16,6 +16,16 @@
     font-family: 'Source Code Pro', monospace;
 }
 
+html, body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     height: 100px;
     width: 100%;
@@ -27,17 +37,18 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: var(--color-2)
 }
 
 main {
     background-color: var(--color-2);
     width: 100%;
+    flex: 1 0 auto;
 }
 
 #h2-principal {
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -50,7 +61,7 @@ main {
     flex-wrap: wrap;
     text-align: center;
     padding: 2%;
-    }
+}
 
 .card {
     background-color: var(--color-4);
@@ -58,13 +69,13 @@ main {
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: auto;
+    height: 400px;
     max-width: 400px;
     border-radius: 10px;
 }
 
 .motorcycle-model {
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 2%;
     color: var(--color-3);
     font-weight: bold;
@@ -93,12 +104,9 @@ main {
 .card-datails h4, p {
     border-bottom: 1px solid var(--color-3);
     color: #fff;
-    font: 1.3em sans-serif;
+    font: 1.0em sans-serif;
 }
 
-.descricao{
-    background-color: rgba(243, 243, 243, 0.1);  
-}
 
 .card-add {
     background-color: var(--color-4);
@@ -129,29 +137,38 @@ main {
 }
 
 .card-add button span {
-    font-size: 2.7em;
+    display: block;
+    font-size: 3em;
     color: #fff;
 }
 
-.card:hover, .card-add:hover{
+#btn-add-txt {
+    font-size: 1.7em;
+    color: #fff;
+}
+
+
+.card:hover, .card-add:hover {
     transition: all 0.5s;
     transform: scale(1.05);
 }
 
-footer{
+footer {
+    flex-shrink: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
     text-align: center;
     background-image: linear-gradient(315deg, #008e36 0%, #852b29 74%);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #fff;
+
 }
 
-footer div{
+footer div {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -183,15 +200,14 @@ footer section a img {
     height: auto;
 
 }
-@media (max-width: 460px){
 
-/*mobile*/
-    
-    #btn-add {
-        font-size: 15px;
-        width: 80%
-    }
+@media (max-width: 460px) {
 
+    /*mobile*/
+
+
+
+ 
     header {
         flex-direction: column;
         text-align: center;
@@ -204,26 +220,31 @@ footer section a img {
     }
 
     .card-add {
-        width: 80%;
-        height: 200px
+        width: 150px;
+        height: 150px;
     }
-    
-    footer div{
+
+    footer div {
         width: 100%;
         padding-top: 5%;
         flex-direction: column;
         align-items: center;
     }
+
     footer section {
         width: 80%;
         padding-top: 10%;
     }
 }
 
-@media (min-width: 461px) and (max-width:768px){
+@media (min-width: 461px) and (max-width:768px) {
 
-/*tablet*/
-    
+    /*tablet*/
+    .card-add {
+        width: 180px;
+        height: 180px;
+    }
+
     .card {
         width: 80%;
     }
@@ -233,7 +254,7 @@ footer section a img {
         height: 500px;
     }
 
-    footer div{
+    footer div {
         flex-direction: column;
         align-items: center;
     }
